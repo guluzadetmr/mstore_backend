@@ -1,7 +1,3 @@
-# Express Server with MongoDB, REST Endpoints, Error Handling, Logging, and Swagger Documentation
-
-This project is a template for building a RESTful API using Express, MongoDB, and Node.js. It includes structured error handling, logging, and API documentation using Swagger.
-
 ## Table of Contents
 - [Installation](#installation)
 - [Configuration](#configuration)
