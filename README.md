@@ -24,7 +24,7 @@
     - Ensure you have MongoDB installed and running on your machine.
     - Create a `.env` file in the root directory and add your MongoDB URI:
       ```plaintext
-      MONGO_URI=mongodb://localhost:27017/your-database-name
+      MONGODB_URI=mongodb://localhost:27017/your-database-name
       PORT=3000
       ```
 
