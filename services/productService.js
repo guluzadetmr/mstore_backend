@@ -13,15 +13,21 @@ exports.getAllProducts = async () => {
  * @param {number} perPage - The number of products per page (default is 15)
  * @return {Promise} An array of products based on pagination settings
  */
-exports.getProducts = async (page = 1, perPage = 15) => {
-  const skip = (page - 1) * perPage;
-  const products = await Product.find().sort({ createdAt: -1 }).skip(skip).limit(perPage);
-  return products;
-}
 
-exports.getParentCategoryProducts = async (slug) => {
-  const parentCategory = await categoryService.findCategoryBySlug(slug);
-  return await Product.find({ category: parentCategory._id });
+exports.getCategoryProducts = async (categorySlug, page = 1, perPage = 15) => {
+  const category = await categoryService.findCategoryBySlug(categorySlug);
+
+  if (!category) {
+    throw new Error('Category not found');
+  }
+  const skip = (page - 1) * perPage;
+  if (!category.parentCategory) { // if category is not a sub-category (is a main category)
+    const subCategories = await categoryService.findSubCategoriesByParentCategoryId(category._id);
+    return await Product.find({ category: { $in: subCategories.map(s => s._id) } }).
+      sort({ createdAt: -1 }).skip(skip).limit(perPage);
+  }
+  return await Product.find({ category: category._id }).
+    sort({ createdAt: -1 }).skip(skip).limit(perPage);
 }
 
 exports.createProduct = async (product) => {

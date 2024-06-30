@@ -14,6 +14,10 @@ exports.findCategoryBySlug = async (slug) => {
   return await Category.findOne({ slug });
 }
 
+exports.findSubCategoriesByParentCategoryId = async (parentCategoryId) => {
+  return await Category.find({ parentCategory: parentCategoryId });
+}
+
 exports.getDistinctSpecs = async (categorySlug) => {
   const category = await Category.findOne({ slug: categorySlug, parentCategory: { $ne: null } });
 

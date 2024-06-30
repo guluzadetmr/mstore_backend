@@ -76,4 +76,42 @@ router.get('/', productController.getAllProducts);
  */
 router.post('/', productController.createProduct);
 
+// @route GET /api/products/:categorySlug
+// @desc Get products by category
+/**
+ * @swagger
+ * /api/products/{categorySlug}:
+ *   get:
+ *     summary: Get products by category
+ *     description: Get products by category
+ *     tags: [Products]
+ *     parameters:
+ *       - in: path
+ *         name: categorySlug
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The category slug
+ *       - in: query
+ *         name: page
+ *         schema:
+ *           type: number
+ *         default: 1
+ *         description: The page number
+ *       - in: query
+ *         name: perPage
+ *         schema:
+ *           type: number
+ *         default: 15
+ *         description: The number of products per page
+ *     responses:
+ *       200:
+ *         description: The list of products
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ */
+router.get('/:categorySlug', productController.getCategoryProducts);
+
 module.exports = router;

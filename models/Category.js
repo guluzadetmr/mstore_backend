@@ -5,7 +5,7 @@ const slugify = require('slugify');
 const FilterSchema = new Schema({
   name: { type: String },
   type: { type: String },
-  slug: { type: String, unique: true }
+  slug: { type: String }
 }, { _id: false });
 
 const CategorySchema = new Schema({

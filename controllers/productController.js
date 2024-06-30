@@ -10,9 +10,9 @@ exports.getAllProducts = async (req, res, next) => {
   }
 }
 
-exports.getProducts = async (req, res, next) => {
+exports.getCategoryProducts = async (req, res, next) => {
   try {
-    const products = await productService.getProducts(req.query.page, req.query.perPage);
+    const products = await productService.getCategoryProducts(req.params.categorySlug, req.query.page, req.query.perPage);
     res.json(products);
   } catch (error) {
     next(new AppError(error.message, 500));
