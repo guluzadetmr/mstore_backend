@@ -1,0 +1,136 @@
+2024-06-29T20:35:54.947Z error: Expected ',' or ']' after array element in JSON at position 637
+SyntaxError: Expected ',' or ']' after array element in JSON at position 637
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\Hp\Desktop\mstore_backend-main\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-06-29T20:36:12.337Z error: Operation `categories.insertOne()` buffering timed out after 10000ms
+Error: Operation `categories.insertOne()` buffering timed out after 10000ms
+    at exports.createCategory (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:18:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-29T20:42:34.079Z error: Expected ',' or ']' after array element in JSON at position 637
+SyntaxError: Expected ',' or ']' after array element in JSON at position 637
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\Hp\Desktop\mstore_backend-main\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-06-29T20:42:45.840Z error: Expected ',' or ']' after array element in JSON at position 646
+SyntaxError: Expected ',' or ']' after array element in JSON at position 646
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\Hp\Desktop\mstore_backend-main\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-06-29T20:50:43.877Z error: Operation `categories.insertOne()` buffering timed out after 10000ms
+Error: Operation `categories.insertOne()` buffering timed out after 10000ms
+    at exports.createCategory (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:18:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-30T08:58:15.168Z error: Operation `categories.find()` buffering timed out after 10000ms
+Error: Operation `categories.find()` buffering timed out after 10000ms
+    at exports.getAllCategories (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:9:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-30T10:36:18.501Z error: Category validation failed: parentCategory: Cast to ObjectId failed for value "null" (type string) at path "parentCategory" because of "BSONError"
+Error: Category validation failed: parentCategory: Cast to ObjectId failed for value "null" (type string) at path "parentCategory" because of "BSONError"
+    at exports.createCategory (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:18:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-30T10:47:35.440Z error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: "desteklenen-prosessor-novu" }
+Error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: "desteklenen-prosessor-novu" }
+    at exports.createCategory (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:18:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-30T10:52:38.691Z error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: null }
+Error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: null }
+    at exports.createCategory (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:18:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-30T10:56:45.713Z error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: null }
+Error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: null }
+    at exports.createCategory (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:18:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-30T10:57:50.074Z error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: "desteklenen-prosessor-novu" }
+Error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: "desteklenen-prosessor-novu" }
+    at exports.createCategory (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:18:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-30T10:58:12.765Z error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: "desteklenen-prosessor-novu" }
+Error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: "desteklenen-prosessor-novu" }
+    at exports.createCategory (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:18:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-30T10:58:46.298Z error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: "desteklenen-prosessor-novu" }
+Error: E11000 duplicate key error collection: test.categories index: filters.slug_1 dup key: { filters.slug: "desteklenen-prosessor-novu" }
+    at exports.createCategory (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:18:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-07-02T18:12:49.311Z error: Category not found
+Error: Category not found
+    at exports.getDistinctSpecs (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:27:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-07-02T18:14:15.759Z error: Category not found
+Error: Category not found
+    at exports.getDistinctSpecs (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:27:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-07-02T18:16:34.499Z error: Category not found
+Error: Category not found
+    at exports.getDistinctSpecs (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:27:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-07-02T18:19:22.725Z error: Category not found
+Error: Category not found
+    at exports.getDistinctSpecs (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:27:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-07-02T18:19:25.636Z error: Category not found
+Error: Category not found
+    at exports.getDistinctSpecs (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:27:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-07-02T18:52:01.090Z error: Category not found
+Error: Category not found
+    at exports.getDistinctSpecs (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:27:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-07-02T18:52:06.573Z error: Category not found
+Error: Category not found
+    at exports.getDistinctSpecs (C:\Users\Hp\Desktop\mstore_backend-main\controllers\categoryController.js:27:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-07-02T19:02:43.390Z error: Category not found
+Error: Category not found
+    at exports.getCategoryProducts (C:\Users\Hp\Desktop\mstore_backend-main\controllers\productController.js:18:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-07-02T19:02:43.878Z error: Category not found
+Error: Category not found
+    at exports.getCategoryProducts (C:\Users\Hp\Desktop\mstore_backend-main\controllers\productController.js:18:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-07-04T17:50:38.387Z error: Expected double-quoted property name in JSON at position 552
+SyntaxError: Expected double-quoted property name in JSON at position 552
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\Hp\Desktop\mstore_backend-main\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-07-04T17:51:17.482Z error: Expected double-quoted property name in JSON at position 552
+SyntaxError: Expected double-quoted property name in JSON at position 552
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\Hp\Desktop\mstore_backend-main\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\Hp\Desktop\mstore_backend-main\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)

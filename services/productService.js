@@ -34,4 +34,3 @@ exports.createProduct = async (product) => {
   const newProduct = await Product.create(product);
   return newProduct;
 }
-
